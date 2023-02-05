@@ -1,0 +1,42 @@
+Card hand[10];//pos1:1
+int handsize=0;
+
+vector<buff> Buff;//pos1:2
+
+Minion MyBoard[7];//pos1:3
+int MyBoardSize=0;
+
+Minion EnemyBoard[7];//pos1:4
+int EnemyBoardSize=0;
+
+int mana=0;//pos1:5
+
+int Card_Used=0;//pos1:6
+
+bool MyHeroFullHp=false;//pos1:7
+
+int EnemyHeroFullHp=0;
+
+int EnemyHeroCurHp=0;//pos1:8
+
+class Card
+{
+    public:
+    int id;
+    int Raw_Cost;//pos3:1
+    int Buffed_Cost;//pos3:2
+    int Type;
+    int standby;//pos3:3  注能或暗影变的法术的id 
+    Card();
+    Card(int id);
+};
+
+class Minion
+{
+    public:
+    int id;
+    int Hp;//pos3:1
+    bool full_Hp;//pos3:2
+    Minion();
+    Minion(int ID);
+};
