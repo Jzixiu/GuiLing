@@ -1151,7 +1151,7 @@ int main()
     cin>>EnemyHeroFullHp;
     cout<<"敌方英雄当前血量";
     cin>>EnemyHeroHp;
-    solution_EnemyHero_Hp=EnemyHeroHp;
+    solution_EnemyHero_Hp=EnemyHeroHp+1;
     cout<<"敌方英雄护甲值:";
     cin>>EnemyHeroArmor;
     cout<<"破冰模式(0/1):";
